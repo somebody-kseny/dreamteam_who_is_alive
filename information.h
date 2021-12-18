@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-enum typework {
+enum class typework {
 	dir,
 	file,
 };
@@ -17,9 +17,9 @@ class information {
 		int setpathToProver(std::string slov);
 		int setkarantin(std::string slov);
 
-		std::string get_typeOfModifer() const;
+		typework get_typeOfModifer() const;
 		std::string get_pathToProver() const;
-		std::string get_karantin() const;
+		bool get_karantin() const;
 	
 	private:
 		typework typeOfModifer;

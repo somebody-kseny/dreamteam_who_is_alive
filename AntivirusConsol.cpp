@@ -17,9 +17,7 @@ int main()
         }
 
         information first { stroka_is_consoli };
-        std::cout << first.get_typeOfModifer() << std::endl;
-        std::cout << first.get_pathToProver() << std::endl;
-        std::cout << first.get_karantin() << std::endl;
+
         
     }
     return 0;

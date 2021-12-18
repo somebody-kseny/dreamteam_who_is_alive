@@ -43,11 +43,11 @@ information::information(std::string str) {
 
 int information::settypeOfModifer(std::string slov) {
 	if (slov == "dir") {
-		information::typeOfModifer = dir;
+		information::typeOfModifer = typework::dir;
 		return 0;
 	}
 	else if (slov == "file") {
-		information::typeOfModifer = file;
+		information::typeOfModifer = typework::file;
 		return 0;
 	}
 	else {
@@ -73,3 +73,14 @@ int information::setkarantin(std::string slov) {
 }
 
 
+typework information::get_typeOfModifer() const {
+	return information::typeOfModifer;
+}
+
+std::string information::get_pathToProver() const {
+	return information::pathToProver;
+}
+
+bool information::get_karantin() const {
+	return information::karantin;
+}
